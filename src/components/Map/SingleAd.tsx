@@ -15,6 +15,7 @@ export const SingleAd = (props: Props) => {
 
             setAd(data);
         })();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (ad === null) {

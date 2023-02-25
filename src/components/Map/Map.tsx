@@ -16,7 +16,6 @@ export const Map = () => {
         (async () => {
             const res = await fetch(`http://localhost:3001/ad/search/${search}`);
             const data = await res.json();
-            console.log(data);
 
             setAds(data);
         })();
